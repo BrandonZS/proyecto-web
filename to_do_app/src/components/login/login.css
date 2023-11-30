@@ -1,5 +1,7 @@
 body{
-    background: url(https://i2.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/06/Fondos-de-pantalla-de-paisajes-naturales25.jpg);
+    background: url(https://i2.wp.com/medioambienteynaturaleza.com/wp-content/uploads/2015/06/Fondos-de-pantalla-de-paisajes-naturales25.jpg) no-repeat center;
+    background-size: cover;
+
 }
 .login h1{
     color: beige;
@@ -34,4 +36,5 @@ body{
 }
 .login button{
     margin-bottom: 8px;
+    background-color: #60BAA0;
 }

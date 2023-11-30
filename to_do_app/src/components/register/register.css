@@ -1,1 +1,20 @@
-.Register {}
+.register {
+    display: relative;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(6px);
+    margin: 5em;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: .1px solid white;
+    border-radius: 16px;
+    padding: 1em;
+}
+
+.register h1{
+    color: white;
+}
+.register button{
+    background-color: #60BAA0;
+
+}
