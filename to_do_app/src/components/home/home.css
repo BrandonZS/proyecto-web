@@ -1,5 +1,7 @@
 .Home {
     display: flex;
+    background-color: red;
+    height: 100vh;
 }
 .sidebar {
     width: 250px; /* Ancho del menú lateral */
@@ -7,7 +9,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333; /* Color de fondo del menú */
+    background-color: bisque; /* Color de fondo del menú */
     color: #fff; /* Color del texto */
     padding-top: 50px; /* Espaciado superior */
   }
@@ -22,8 +24,8 @@
   }
   
   nav ul li a {
-    text-decoration: none;
-    color: #fff; /* Color del enlace */
+    text-decoration: underline;
+    color: black; /* Color del enlace */
     display: block;
   }
   
@@ -34,9 +36,14 @@
     margin-left: 250px;
   }
   header{
-    
-    background-color: gray;
+    background-color: black;
     width: 100vw;
     height: 100px;
+    color: white;
     
   }
+#card-home{
+  background-color: beige;
+  min-height: 90vh;
+}
+

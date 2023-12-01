@@ -56,14 +56,14 @@ const Notes = (props) => {
   return(
   <div className="notes" data-testid="Notes">
  <TextField
-      id="Outline"
+      id="tituloCard"
       name="Title"
       defaultValue={note.Title}
       variant="standard"
       onChange={onChange}
     />
     <TextField
-      id="Outline"
+      id="contentCard"
       name="Content"
       defaultValue={note.Content}  
       variant="standard" 
