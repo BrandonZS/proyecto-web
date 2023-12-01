@@ -12,7 +12,10 @@ const Login = () => {
     username: "",
     password: "",
   });
-  const [userAuth, setUserAuth] = React.useState();
+  const [userAuth, setUserAuth] = React.useState({
+    username: "",
+    password: "",
+  });
   const navigate = useNavigate();
 
   const urlApi = "http://localhost/dashboard/apiDB.php/records";
@@ -31,16 +34,15 @@ const Login = () => {
     })
     .then(function (response) {
       
-      console.log(response.data.records[0]);
       setUserAuth(response.data.records[0]);
-      consultar();
       
     })
     .catch(function (error) {
       console.log(error);
     })
     .finally(function () {
-
+      console.log("User Auth"+userAuth);
+      consultar();
       
     });
   };
@@ -61,7 +63,7 @@ const Login = () => {
     <img src={imgNotaLog} alt="Imagen representativa de notas"/>
     <TextField id="user-input" name="username" label="Usuario" variant="outlined" onChange={onChangeInput} />
     <br/><br/>
-    <TextField id="pass-input" name="password" label="Contraseña" variant="outlined" onChange={onChangeInput}/>
+    <TextField id="pass-input" name="password" label="Contraseña" variant="outlined" type='password' onChange={onChangeInput}/>
     <br/><br/><br/>
     <Button variant="contained" onClick={getUsers}>Ingresar</Button>
     <br/>

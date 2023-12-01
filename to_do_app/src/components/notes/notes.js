@@ -15,6 +15,7 @@ const Notes = (props) => {
 
     console.log(note);
   };
+
   const putNote = () =>{
     axios
     .put(`${urlApi}/notes/${note.NoteID}`, {
@@ -36,7 +37,7 @@ const Notes = (props) => {
   };
   const deleteNote = () =>{
     console.log(note.NoteID);
-    props.refresh();
+    
     axios
     .delete(`${urlApi}/notes/${note.NoteID}`, {
     })
@@ -49,7 +50,7 @@ const Notes = (props) => {
     })
     .finally(function () {
 
-      
+      props.refresh();
     });
     
   };
