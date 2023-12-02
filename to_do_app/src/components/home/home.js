@@ -77,7 +77,7 @@ const Home = () => {
           <br/><br/><br/>
           <TextField id="outlined-basic" name="Title" label="Titulo" variant="outlined" onChange={onChange}/><br/><br/>
           <TextField id="outlined-basic" name='Content' label="Contenido" variant="outlined" onChange={onChange}/>
-          <Button variant="contained" onClick={postNote}>Agregar</Button>
+          <Button id="botonpri" variant="contained" onClick={postNote}>Agregar</Button>
         </ul>
       </nav>
     </div>
