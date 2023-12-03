@@ -6,13 +6,13 @@
     margin: 5em;
     margin-left: 30%;
     margin-right: 30%;
-    border: .1px solid white;
+    border: .2px solid black;
     border-radius: 16px;
     padding: 1em;
 }
 
 .register h1{
-    color: white;
+    color: black;
 }
 .register button{
     background-color: #60BAA0;
