@@ -75,8 +75,8 @@ const Home = () => {
           <li><a href="/about">Acerca de</a></li>
           <li><a href="/services">Servicios</a></li>
           <br/><br/><br/>
-          <TextField id="outlined-basic" name="Title" label="Titulo" variant="outlined" onChange={onChange}/><br/><br/>
-          <TextField id="outlined-basic" name='Content' label="Contenido" variant="outlined" onChange={onChange}/>
+          <TextField id="tituloContCard" name="Title" label="Titulo" variant="outlined" onChange={onChange}/><br/><br/>
+          <TextField id="contenidoCard" name='Content' label="Contenido" variant="outlined" onChange={onChange}/>
           <Button id="botonpri" variant="contained" onClick={postNote}>Agregar</Button>
         </ul>
       </nav>

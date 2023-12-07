@@ -11,14 +11,31 @@
 }
 #tituloCard{
     text-align: center;
-    border-bottom: 2px solid;
+    background-color: #eaccad;
+    border-radius: 1em 1em 0px 0px;
+    border-bottom: 2px solid black;
 
 }
 
 #contentCard{
-    background-color: darkcyan;
+    background-color: #fdecda;
     padding-bottom: 5em;
     border-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+#contenedorBotones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#editar{
+    grid-column: 1;
+    margin-top: -20px;
+    margin-right: 10px ;
+}
+#borrar{
+    grid-column: 2;
+    margin-top: -20px;
+    margin-right:10px ;
 }
 
 /*Todos los estilos*/

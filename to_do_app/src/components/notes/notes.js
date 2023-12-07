@@ -71,12 +71,15 @@ const Notes = (props) => {
       onChange={onChange}
     />
     <br />
-    <Button color="secondary" variant="text" onClick={putNote}>
+    <div id="contenedorBotones">
+    <Button id="editar" color="secondary" variant="text" onClick={putNote}>
       editar
     </Button>
-    <Button color="secondary" variant="text" onClick={deleteNote}>
+    <Button id="borrar" color="secondary" variant="text" onClick={deleteNote}>
       BORRAR
     </Button>
+    </div>
+   
   </div>
 )};
 
