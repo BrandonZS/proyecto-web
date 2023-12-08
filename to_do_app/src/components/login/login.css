@@ -2,11 +2,11 @@ body{
     /*El codigo de abajo que se encuentra en Body es la animacion del BackGround*/
     --s: 25vmin;
     --p: calc(var(--s) / 2);
-    --c1: pink;
-    --c2: dodgerblue;
-    --c3: white;
+    --c1: #E8C39E;
+    --c2: #eaccad;
+    --c3: #f3dbc3;
     --bg: var(--c3);
-    --d: 4200ms;
+    --d: 7000ms;
     --e: cubic-bezier(0.76, 0, 0.24, 1);
     
     background-color: var(--bg);
@@ -93,13 +93,13 @@ body{
     justify-content: center;
     align-items: center;
     margin:10%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 27%;
+    margin-right: 27%;
     padding: 1em;
     border-radius: 1em;
-    border: .2px solid black;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 .9em 2em 0 black;
+    border: 3px dotted black;
+    background-color: #fddebc;
+    min-height: 53vh;
     
 }
 .login::before{
@@ -115,13 +115,24 @@ body{
 .login a{
     color: black;
     text-decoration: none;
+    font-size: small;
 }
 .login a:hover{
     font-weight: bold;
     color:darkmagenta;
-    text-decoration: underline;
 }
 .login button{
     margin-bottom: 8px;
-    background-color: #60BAA0;
+    background-color: #4c9e87;
+    border-radius: 3em;
+    transition: .5s;
+}
+.login button:hover{
+  transition: .5s;
+  margin-bottom: 8px;
+  background-color: aquamarine;
+  color:black ;
+  border-radius: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
