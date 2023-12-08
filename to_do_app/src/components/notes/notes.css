@@ -3,39 +3,57 @@
     grid-template-columns: auto;
     grid-template-rows: 1fr;
     margin: 1em;
-    border: 2px solid;
+    border: 2px solid #e3b78b;
     align-items: center;
     justify-self: center;
-    box-shadow: 0px 4px 20px 0px black;
+    /*box-shadow: 0px 4px 20px 0px black;*/
     border-radius: 1em;
 }
 #tituloCard{
     text-align: center;
     background-color: #eaccad;
     border-radius: 1em 1em 0px 0px;
-    border-bottom: 2px solid black;
+    /*border-bottom: 2px solid black;*/
+    padding: 5px;
+    border: 1px solid #eaccad;
 
 }
 
 #contentCard{
     background-color: #fdecda;
     padding-bottom: 5em;
-    border-bottom: 2px;
-    border-bottom: 2px solid black;
+    padding: 10px;
+    min-height: 100px;
+
+    /*border-bottom: 2px;
+    /*border-bottom: 2px solid black;*/
+}
+#tituloCard{
+border: none;
 }
 #contenedorBotones{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-#editar{
-    grid-column: 1;
-    margin-top: -20px;
-    margin-right: 10px ;
+#contenedorBotones .estiloBoton{
+    margin-top: -22px;
+    background-color: #fdecda;
+    border-radius: 0px;
+
 }
-#borrar{
+#contenedorBotones #editar{
+    grid-column: 1;
+    border-bottom-left-radius: 14px;
+}
+#contenedorBotones #borrar{
     grid-column: 2;
-    margin-top: -20px;
-    margin-right:10px ;
+    border-bottom-right-radius: 14px;
+}
+.TextField{
+    border: none;
+}
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root{
+    padding: 0px;
 }
 
 /*Todos los estilos*/

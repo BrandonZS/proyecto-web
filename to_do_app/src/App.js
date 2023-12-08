@@ -2,7 +2,7 @@ import './App.css';
 import Home from './components/home/home';
 import Login  from './components/login/login'
 import Register  from './components/register/register'
-import Notes from './components/notes/notes'
+import UserAdmin from './components/useradmin/useradmin'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/useradmin" element={<UserAdmin />} />
           </Routes>
         </Router>
       </div>

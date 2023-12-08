@@ -27,7 +27,7 @@ const Home = () => {
     setAddNote({ ...addNote, [name]: value });
     console.log(addNote);
   };
-  const getNote = (event) => {
+  const getNote = () => {
     axios
       .get(`${urlApi}/notes`)
       .then(function (response) {
@@ -65,19 +65,19 @@ const Home = () => {
   };
   return (
   <div className="home" data-testid="Home">
-    <header>
-      <UserAdmin id="user-admin"></UserAdmin>
-    </header>
+
     <div className="sidebar">
       <nav>
         <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/about">Acerca de</a></li>
-          <li><a href="/services">Servicios</a></li>
+
           <br/><br/><br/>
           <TextField id="tituloContCard" name="Title" label="Titulo" variant="outlined" onChange={onChange}/><br/><br/>
           <TextField id="contenidoCard" name='Content' label="Contenido" variant="outlined" onChange={onChange}/>
           <Button id="botonpri" variant="contained" onClick={postNote}>Agregar</Button>
+        </ul>
+        <ul>
+          <li><a href='http://localhost:3000/useradmin'>Editar Usuario</a></li>
+          <li><a href='http://localhost:3000'>Cerrar sesión</a></li>
         </ul>
       </nav>
     </div>

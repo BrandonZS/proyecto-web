@@ -65,17 +65,19 @@ const Notes = (props) => {
     />
     <TextField
       id="contentCard"
+      className='TextField'
       name="Content"
-      defaultValue={note.Content}  
-      variant="standard" 
+      defaultValue={note.Content}
+      multiline
+      maxRows={4} 
       onChange={onChange}
     />
     <br />
     <div id="contenedorBotones">
-    <Button id="editar" color="secondary" variant="text" onClick={putNote}>
+    <Button className="estiloBoton" id="editar" color="secondary" variant="text" onClick={putNote}>
       editar
     </Button>
-    <Button id="borrar" color="secondary" variant="text" onClick={deleteNote}>
+    <Button className="estiloBoton" id="borrar" color="secondary" variant="text" onClick={deleteNote}>
       BORRAR
     </Button>
     </div>

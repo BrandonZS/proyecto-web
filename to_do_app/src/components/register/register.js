@@ -58,10 +58,10 @@ const Register = () => {
   return (
   <div className="register" data-testid="Register">
     <h1>Registro de usuario</h1>
-    <TextField id="outlined-basic" name='Email' label="Email" variant="outlined"  onChange={onChange} required/> <br/><br/>
-    <TextField id="outlined-basic" name='Username' label="Nombre de Usuario" variant="outlined" onChange={onChange} required/><br/><br/>
-    <TextField id="outlined-basic" type='password' name='Password1' label="Contraseña" variant="outlined" onChange={onChange} required/><br/><br/>
-    <TextField id="outlined-basic" type='password' name='Password2'label="Repetir contraseña" variant="outlined" onChange={onChange} required/><br/><br/><br/>
+    <TextField id="outlined-basic" name='Email' label="Email" variant="standard"  onChange={onChange} required/> <br/><br/>
+    <TextField id="outlined-basic" name='Username' label="Nombre de Usuario" variant="standard" onChange={onChange} required/><br/><br/>
+    <TextField id="outlined-basic" type='password' name='Password1' label="Contraseña" variant="standard" onChange={onChange} required/><br/><br/>
+    <TextField id="outlined-basic" type='password' name='Password2'label="Repetir contraseña" variant="standard" onChange={onChange} required/><br/><br/><br/>
     <Button variant="contained" onClick={register}>Registrar</Button>
   </div>
 )};

@@ -1,7 +1,8 @@
 .Home {
     display: flex;
     background-color: red;
-    height: 100vh;
+    min-height: 150vh;
+    border: none;
 }
 .sidebar {
     width: 250px; /* Ancho del menú lateral */
@@ -42,6 +43,7 @@
   }
   #card-home{
     margin-left: 250px;
+    min-height: 100vh;
   }
   header{
     background-color: black;
@@ -51,8 +53,9 @@
     
   }
 #card-home{
-  background-color: #fdecda;
-  min-height: 90vh;
+  background-color: transparent;
+  min-height: 100vh;
+  border: none;
 }
 
 #botonpri{
